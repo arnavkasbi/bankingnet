@@ -1,13 +1,62 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.header-nav {
+  width: 100%;
+  height: 10vh;
+  background-color: lightblue;
+  color: #0000ff;
+  border: 1px solid rgb(49, 46, 46);
+  font-size: 2rem;
+  padding-top: 1.5rem;
+  padding-left: 25px;
+}
+.footer {
+  height: 2rem;
+  width: 100%;
+  border: 1px solid rgb(49, 46, 46);
+  background-color: lightGrey;
+  color: grey;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 30px;
+}
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+.input-container .label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.input-container .inputValue {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+.button-page {
+  background-color: #4e4ecb;
+  color: #fff;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 24px;
+  cursor: pointer;
+  min-width: 150px;
+  font-weight: 900;
+  margin-top: 15px;
 }

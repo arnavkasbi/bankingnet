@@ -1,0 +1,15 @@
+.container {
+  background: rgb(246 244 244);
+  border-radius: 4px;
+  color: black;
+  height: 100%;
+  width: 100%;
+  border: 1px soild rgb(192, 185, 185);
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+#accountDetailsPage {
+  display: flex;
+
+  height: 80vh;
+}
