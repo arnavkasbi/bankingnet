@@ -1,38 +1,36 @@
 {
   "accounts": [
-      {
-          "customerId": 1,
-          "accountName": "xxx",
-          "accountNumber": "12345",
-          "accountBalance": 123,
-          "password": "12345",
-          "txns": [
-              {
-                  "type": "credit",
-                  "player2": "2",
-                  "amount": 100,
-                  "comment": "asdfdff",
-                  "txnId": 12
-              }
-          ]
-      },
-      {
-          "customerId": 2,
-          "accountName": "yyy",
-          "accountNumber": "12345",
-          "accountBalance": 123,
-          "password": "12345",
-          "txns": [
-              {
-                  "type": "debit",
-                  "player2": "1",
-                  "amount": 100,
-                  "comment": "asdfdff",
-                  "txnId": 12
-              }
-          ]
-
-      }
-
+    {
+      "customerId": 1,
+      "accountName": "John",
+      "accountNumber": "2559890",
+      "accountBalance": 50000,
+      "password": "test",
+      "txns": [
+        {
+          "type": "credit",
+          "player2": "2",
+          "amount": 2000,
+          "comment": "",
+          "txnId": 1
+        }
+      ]
+    },
+    {
+      "customerId": 2,
+      "accountName": "Jenny",
+      "accountNumber": "8374673",
+      "accountBalance": 10000,
+      "password": "test",
+      "txns": [
+        {
+          "type": "debit",
+          "player2": "1",
+          "amount": 2000,
+          "comment": "",
+          "txnId": 2
+        }
+      ]
+    }
   ]
 }

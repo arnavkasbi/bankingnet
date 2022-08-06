@@ -31,7 +31,7 @@ class Login extends Component {
         } else {
             axios.get(`http://localhost:3000/accounts?customerId=${this.state.customerId}`)
             .then(res => {
-                if (res.data.length != undefined || res.data.length == 0) {
+                if (res.data.length != undefined || res.data.length !== 0) {
                     if (res.data[0].password == this.state.password) {
                         console.log("success")
                         localStorage.setItem("customerId",this.state.customerId)
