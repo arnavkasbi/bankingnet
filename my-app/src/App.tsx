@@ -6,7 +6,7 @@ import { AppRoutes } from './layout/Routes';
 function App() {
   return (
     <Provider store={store}>
-          <AppRoutes />
+        <AppRoutes />
       </Provider>
   );
 }
