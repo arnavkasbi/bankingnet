@@ -7,8 +7,9 @@ import {
   LOGIN_ROUTE,
   ACCOUNT_DETAILS,
   OVERVIEW_ACCOUNT,
-  ACCOUNT_TRANSACTIONS,
+  ACCOUNT_TRANSACTIONS,TRANSACTION_ROUTE
 } from "./appRoutes";
+import { Transactions } from "../pages/Transactions/Transactions";
 
 type routesProps = Record<string, never>;
 
@@ -25,6 +26,7 @@ export const AppRoutes: React.FC<routesProps> = () => {
         <Route path={ACCOUNT_DETAILS} element={<AccountDetails />} />
         <Route path={OVERVIEW_ACCOUNT} element={<OverViewPage />} />
         <Route path={ACCOUNT_TRANSACTIONS} element={<TransactionDetails />} />
+        <Route path={TRANSACTION_ROUTE} element={<Transactions />} />
 
         {/* Faulty Route */}
         <Route path="*" element={<Navigate to={LOGIN_ROUTE} replace />} />
