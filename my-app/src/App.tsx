@@ -1,13 +1,13 @@
-import './App.css';
-import { Provider } from 'react-redux'
-import { store } from './stores'
-import { AppRoutes } from './layout/Routes';
+import "./assets/main.scss";
+import { Provider } from "react-redux";
+import { store } from "./stores";
+import { AppRoutes } from "./layout/Routes";
 
 function App() {
   return (
     <Provider store={store}>
-        <AppRoutes />
-      </Provider>
+      <AppRoutes />
+    </Provider>
   );
 }
 
