@@ -8,8 +8,7 @@ type IFormInputProps = {
   type?: string;
   placeholder?: string;
   readOnly?: boolean;
-  error: boolean;
-  errorMsg?: string;
+  error: string;
   fieldOptions?: Array<any>;
   optionKey?: string;
   optionValue?: string;
@@ -21,8 +20,7 @@ export const FormInput: React.FC<IFormInputProps> = ({
   as = "",
   placeholder = "",
   readOnly = false,
-  error = false,
-  errorMsg = "",
+  error = "",
   fieldOptions = [],
   optionKey = "",
   optionValue = "",
@@ -46,7 +44,7 @@ export const FormInput: React.FC<IFormInputProps> = ({
             : null}
         </Field>
       </div>
-      {error && <div className="input-feedback">{errorMsg}</div>}
+      {error && <div className="input-feedback">{error}</div>}
     </div>
   );
 };
