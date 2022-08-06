@@ -52,42 +52,53 @@ export const Transactions: React.FC<ITransactionProps> = () => {
         return (
           <>
             <FormInput
-              errorMsg={status.formSubmitMessage}
               fieldName="origin"
               displayName="Origin Account"
               name="origin"
-              error={!!errors["origin"] && !!touched["origin"]}
+              error={
+                !!errors["origin"] && !!touched["origin"]
+                  ? errors["origin"]
+                  : ""
+              }
             />
             <FormInput
-              errorMsg={status.formSubmitMessage}
               fieldName="destination"
               displayName="Destination Account"
               name="destination"
               as="select"
               fieldOptions={[]}
               optionKey={accounts}
-              error={!!errors["destination"] && !!touched["destination"]}
+              error={
+                !!errors["destination"] && !!touched["destination"]
+                  ? errors["destination"]
+                  : ""
+              }
             />
             <FormInput
-              errorMsg={status.formSubmitMessage}
               fieldName="amount"
               displayName="Transfer Amount"
               name="amount"
-              error={!!errors["amount"] && !!touched["amount"]}
+              error={
+                !!errors["amount"] && !!touched["amount"]
+                  ? errors["amount"]
+                  : ""
+              }
             />
             <FormInput
-              errorMsg={status.formSubmitMessage}
               fieldName="comment"
               displayName="Comment"
               name="comment"
-              error={!!errors["comment"] && !!touched["comment"]}
+              error={
+                !!errors["comment"] && !!touched["comment"]
+                  ? errors["comment"]
+                  : ""
+              }
             />
             <FormInput
-              errorMsg={status.formSubmitMessage}
               fieldName="date"
               displayName="Date"
               name="date"
-              error={!!errors["date"] && !!touched["date"]}
+              error={errors["date"] && touched["date"] ? errors["date"] : ""}
             />
           </>
         );
